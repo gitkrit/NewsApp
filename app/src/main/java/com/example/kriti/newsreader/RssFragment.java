@@ -122,7 +122,6 @@ public class RssFragment extends Fragment implements OnItemClickListener {
 	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 		RssAdapter adapter = (RssAdapter) parent.getAdapter();
 		RssItem item = (RssItem) adapter.getItem(position);
-		view.setBackgroundResource(R.drawable.grey_gradient);
 		//Uri uri = Uri.parse(item.getLink());
 		Bundle bundle = new Bundle();
 		Fragment toFragment = new ArticleFragment();
